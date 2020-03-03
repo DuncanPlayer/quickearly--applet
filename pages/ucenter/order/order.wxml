@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="orders">
+        <!-- url="../orderDetail/orderDetail?id={{item.id}}"  -->
+        <view class="order" wx:for="{{orderList}}" wx:key="{{item.order.id}}">
+            <view class="h">
+                <view class="l">订单编号：{{item.order.orderSn}}</view>
+            </view>
+            <view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+                <view class="img">
+                    <image src="{{gitem.listPicUrl}}"></image>
+                </view>
+                <view class="info">
+                    <text class="name">{{gitem.goodsName}}</text>
+                    <text class="number">共{{gitem.number}}件早餐</text>
+                </view>
+                <view class="status"></view>
+            </view>
+            <view class="b">
+                <view class="l">实付：￥{{item.order.actualPrice}}</view>
+                <view class="r"><button class="btn" data-order-index="{{item.order.id}}" bindtap="btnDetail" wx:if="{{item.order.payStatus == true}}">详情</button></view>
+                <view class="r">
+                    <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.order.payStatus == false}}">去付款</button>
+                    <button class="btn" data-order-index="{{index}}" bindtap="logistics" wx:if="{{item.order.payStatus == true}}">配送进度</button>
+                </view>
+            </view>
+            
+        </view>
+    </view>
+</view>

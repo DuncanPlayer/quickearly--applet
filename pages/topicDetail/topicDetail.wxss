@@ -1,0 +1,386 @@
+.goods-attr1 {
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  padding: 0 31.25rpx 25rpx 31.25rpx;
+  background: #fff;
+}
+
+.goods-attr1 .t {
+  width: 687.5rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  font-size: 38.5rpx;
+}
+
+.goods-attr1 .item {
+  width: 687.5rpx;
+  height: auto;
+  padding: 11rpx 20rpx;
+  margin-bottom: 11rpx;
+  background: #f7f7f7;
+  font-size: 38.5rpx;
+}
+
+.goods-attr1 .everyloose {
+  float: left;
+  font-size: 25rpx;
+  width: auto;
+  height: auto;
+  line-height: 32rpx;
+  overflow: hidden;
+  color: #999;
+}
+
+.goodsimgs {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+
+.goodsimgs image {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.goods-info {
+  width: 750rpx;
+  height: 306rpx;
+  overflow: hidden;
+  background: #fff;
+}
+
+.goods-info .c {
+  display: block;
+  width: 718.75rpx;
+  height: 100%;
+  margin-left: 31.25rpx;
+  padding: 38rpx 31.25rpx 38rpx 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.goods-info .c text {
+  display: block;
+  width: 687.5rpx;
+  text-align: center;
+}
+
+.goods-info .name {
+  height: 41rpx;
+  margin-bottom: 5.208rpx;
+  font-size: 41rpx;
+  line-height: 41rpx;
+}
+
+.goods-info .desc {
+  height: 43rpx;
+  margin-bottom: 41rpx;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: #999;
+}
+
+.goods-info .price {
+  height: 35rpx;
+  font-size: 35rpx;
+  line-height: 35rpx;
+  color: #b4282d;
+}
+
+.goods-info .brand {
+  margin-top: 23rpx;
+  min-height: 40rpx;
+  text-align: center;
+}
+
+.goods-info .brand text {
+  display: inline-block;
+  width: auto;
+  padding: 2px 30rpx 2px 10.5rpx;
+  line-height: 35.5rpx;
+  border: 1px solid #f48f18;
+  font-size: 25rpx;
+  color: #f48f18;
+  border-radius: 4px;
+  background: url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/detailTagArrow-18bee52dab.png) 95% center no-repeat;
+  background-size: 10.75rpx 18.75rpx;
+}
+
+.common-problem1 {
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+}
+
+.common-problem1 .h1 {
+  position: relative;
+  height: 145.5rpx;
+  width: 750rpx;
+  padding: 56.25rpx 0;
+  background: #fff;
+  text-align: center;
+}
+
+.common-problem1 .h1 .line1 {
+  display: inline-block;
+  position: absolute;
+  top: 72rpx;
+  left: 0;
+  z-index: 2;
+  height: 1px;
+  margin-left: 225rpx;
+  width: 300rpx;
+  background: #ccc;
+}
+
+.common-problem1 .h1 .title1 {
+  display: inline-block;
+  position: absolute;
+  top: 56.125rpx;
+  left: 0;
+  z-index: 3;
+  height: 33rpx;
+  margin-left: 285rpx;
+  width: 180rpx;
+  background: #fff;
+}
+
+.common-problem1 .b1 {
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  padding: 0rpx 30rpx;
+  background: #fff;
+}
+
+.methodurl{
+  width:300rpx;
+  height: 300rpx;
+}
+
+.common-problem1 .item1 {
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 25rpx;
+}
+
+.common-problem1 .question-box1 .spot1 {
+  float: left;
+  display: block;
+  height: 8rpx;
+  width: 8rpx;
+  background: #b4282d;
+  border-radius: 50%;
+  margin-top: 11rpx;
+}
+
+.common-problem1 .question-box1 .question1 {
+  float: left;
+  height: 300rpx;
+  width: 350rpx;
+  padding-left: 8rpx;
+  display: block;
+  font-size: 26rpx;
+  padding-bottom: 15rpx;
+  color: #303030;
+}
+
+.common-problem1 .answer1 {
+  line-height: 36rpx;
+  padding-left: 16rpx;
+  margin-left: 350rpx;
+  margin-top: -310rpx;
+  font-size: 26rpx;
+  color: #787878;
+}
+
+
+
+/**1564545646545465**/
+.content{
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+
+.content image{
+    display: inline-block;
+    width: 100%;
+}
+
+.comments{
+    width: 100%;
+    height: auto;
+    padding-left:30rpx;
+    background: #fff;
+    margin-top: 20rpx;
+}
+
+.comments .h{
+    height: 93rpx;
+    line-height: 93rpx;
+    width: 720rpx;
+    padding-right: 30rpx;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.comments .h .t{
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 29rpx;
+    color: #333;
+}
+
+.comments .h .i{
+    display: block;
+    float: right;
+    margin-top: 30rpx;
+    width: 33rpx;
+    height: 33rpx;
+}
+
+.comments .b{
+    height: auto;
+    width: 720rpx;
+}
+
+.comments .item{
+    height: auto;
+    width: 720rpx;
+    overflow: hidden;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.comments .info{
+    height: 127rpx;
+    width: 100%;
+    padding: 33rpx 0 27rpx 0;
+}
+
+.comments .user{
+    float: left;
+    width: auto;
+    height: 67rpx;
+    line-height: 67rpx;
+    font-size: 0;
+}
+
+.comments .user .avatar{
+    display: block;
+    float: left;
+    width: 67rpx;
+    height: 67rpx;
+    margin-right: 17rpx;
+    border-radius: 50%;
+}
+
+.comments .user .nickname{
+    display: block;
+    width: auto;
+    float: left;
+    height: 66rpx;
+    overflow: hidden;
+    font-size: 29rpx;
+    line-height: 66rpx;
+}
+
+.comments .time{
+    display: block;
+    float: right;
+    width: auto;
+    height: 67rpx;
+    line-height: 67rpx;
+    color: #7f7f7f;
+    font-size: 25rpx;
+    margin-right: 30rpx;
+}
+
+.comments .comment{
+    width: 720rpx;
+    padding-right: 30rpx;
+    line-height: 45.8rpx;
+    margin-bottom: 30rpx;
+    font-size: 29rpx;
+    color: #333;
+}
+
+.comments .load{
+    width: 720rpx;
+    height: 108rpx;
+    line-height: 108rpx;
+    text-align: center;
+    font-size: 38.5rpx;
+}
+
+.no-comments{
+    height: 297rpx;
+}
+
+.no-comments .txt{
+    height: 43rpx;
+    line-height: 43rpx;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 29rpx;
+    color: #7f7f7f;
+}
+
+.no-comments .icon{
+    margin: 48rpx auto 18rpx auto;
+    height: 130rpx;
+    display: block;
+    width: 115rpx;
+}
+
+
+.rec-box{
+    width: 690rpx;
+    height: auto;
+    margin: 0 30rpx;
+}
+
+.rec-box .h{
+    position: relative;
+    width: 690rpx;
+    height: 96rpx;
+    /*border-bottom: 1px solid #d0d0d0;*/
+    margin-bottom: 32rpx;
+}
+
+.rec-box .h .txt{
+    display: inline-block;
+    position: absolute;
+    background: #f4f4f4;
+    top: 59rpx;
+    left: 200rpx;
+    width: 290rpx;
+    height: 45rpx;
+    line-height: 45rpx;
+    font-size: 30rpx;
+    color: #999;
+    text-align: center;
+}
+
+.rec-box .b .item{
+    width: 690rpx;
+    height: 397rpx;
+    padding: 24rpx 24rpx 30rpx 24rpx;
+    background: #fff;
+    margin-bottom: 30rpx;
+}
+
+.rec-box .b .item .img{
+    height: 278rpx;
+    width: 642rpx;
+}
+
+.rec-box .b .item .title{
+    display: block;
+    margin-top: 30rpx;
+    height: 30rpx;
+    width: 642rpx;
+    font-size: 28rpx;
+}
+@import "../../lib/wxParse/wxParse.wxss";

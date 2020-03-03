@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="pay-result">
+    <view class='tip'>到店取单，用户可凭二维码到店取单</view>
+    <view class="success" wx:if="{{status == 1}}">
+      <image class="msg" src="{{qrCodeSrc}}"></image>
+      <view class="btns">
+        <button class="btn" bindtap='takeOrder'>设置为到店取单</button>
+        <button class="btn" bindtap='comeback'>返回</button>
+      </view>
+    </view>
+  </view>
+
+</view>

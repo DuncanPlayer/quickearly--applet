@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="massge" wx:for="{{orderList}}">
+      <navigator  class="item" url="../../../pages/chat/chat?brandId={{item.id}}">    
+        <view class="massge-hd"><image class="massge-img" src="{{item.avatar}}"></image><view class='shopname'>{{item.title}}</view>
+        <text class='status'>在线状态:<text class="font-color-c24e4e">离线</text></text>
+        </view>
+      </navigator>
+  </view>
+</view>

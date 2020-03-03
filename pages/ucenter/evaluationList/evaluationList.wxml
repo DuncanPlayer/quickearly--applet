@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="orders">
+        <navigator url="../orderDetail/orderDetail?id={{item.id}}" class="order" wx:for="{{orderList}}" wx:key="item.order.id}}">
+            
+            <view class="h">
+                  <view class="l">订单编号：{{item.order.orderSn}}</view>
+            </view>
+            <view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+                <view class="img">
+                    <image src="{{gitem.listPicUrl}}"></image>
+                </view>
+                <view class="info">
+                    <text class="name">{{gitem.goodsName}}</text>
+                    <text class="number">共{{gitem.number}}件早餐</text>
+                </view>
+                <view class="b">
+                 <view class="r">
+                  <navigator url="/pages/ucenter/evaluation/evaluation?goodsSn={{gitem.goodsSn}}&orderId={{item.order.id}}">
+                      <button class="btn" data-order-index="{{index}}" wx:if="{{item.order.orderStatus == true}}">去评价</button>
+                  </navigator>
+                </view>
+                </view>
+            </view>
+            <view class="b">
+                <view class="l">实付：￥{{item.order.actualPrice}}</view>
+            </view>
+        </navigator>
+    </view>
+</view>

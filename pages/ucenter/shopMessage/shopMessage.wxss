@@ -1,0 +1,29 @@
+.massge{
+  overflow: hidden;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  position: relative;
+  line-height: 1;
+}
+.massge-img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.status{
+  margin-left: 60rpx;
+}
+.massge-hd{
+  padding:20rpx 0rpx 30rpx 20rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.massge-bd,.massge-ft{
+  padding:0rpx 0rpx 30rpx 40rpx; 
+}
+.massge-bd{
+  display: flex;
+  flex-direction: column;
+}

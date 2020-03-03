@@ -1,0 +1,23 @@
+<view class='assess-pages'>
+  <view class='wrapper-item'>
+    <view class='title-img'>
+      <image src='{{goods.listPicUrl}}'></image>
+    </view>
+  <view class='info-desc'>{{goods.name}}</view>
+  </view>
+  <view class='assess-body'>
+    <view class='assess-title'>您对此产品满意吗？</view>
+    <view class='assess-star'>
+      <view class='star-wrap'>
+        <view class='star-item' wx:for="{{stars}}" wx:key="" style='background:url("{{item.flag==1?item.lightImg:item.blackImg}}") no-repeat top;background-size:100%;' data-index="{{index}}" bindtap='starClick'></view>
+      </view>
+      <view class='star-desc'>{{starDesc}}</view>
+    </view>
+    <view class='assess-list'>
+      <view class="item-assess {{item.isChecked == true ? 'selected' : ''}}" wx:for="{{assessLists}}" data-index='{{item.index}}' bindtap='choice' wx:key="">{{item.name}}</view>
+    </view>
+    <textarea maxlength="-1" placeholder='感谢你的评价' bindinput='bindValueInput' placeholder-class='place-assess'></textarea>
+    <include src="../uppicture/uppicture.wxml" />
+  </view>
+  <view class='assess-submint' bindtap='submintEvaluation'>提交评价</view>
+</view>

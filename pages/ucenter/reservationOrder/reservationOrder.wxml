@@ -1,0 +1,30 @@
+<view class='tip'>到店取单，用户可凭二维码到店取单</view>
+<view class="container">
+    <view class="orders">
+        <!-- url="../orderDetail/orderDetail?id={{item.id}}"  -->
+        <view class="order" wx:for="{{orderList}}" wx:key="{item.reservation.id}}">
+            <view class="h">
+                <view class="l">预定编号：{{item.reservation.reservationSn}}</view>
+            </view>
+            <view class="goods" wx:for="{{item.reservationGoods}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+                <view class="img">
+                    <image src="{{gitem.listPicUrl}}"></image>
+                </view>
+                <view class="info">
+                    <text class="name">{{gitem.goodsName}}</text>
+                    <text class="number">共{{gitem.number}}件早餐</text>
+                </view>
+                <view class="status"></view>
+            </view>
+            <view class="b">
+                <view class="l">实付：￥{{item.reservation.actualPrice}}</view>
+                <view class="r"><button class="btn" data-order-index="{{item.reservation.id}}" bindtap="qrCode" wx:if="{{item.reservation.payStatus == true}}">到店取单</button></view>
+                <view class="r">
+                    <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.reservation.payStatus == false}}">去付款</button>
+                    <button class="btn" data-order-index="{{item.reservation.id}}" bindtap="btnDetail" wx:if="{{item.reservation.payStatus == true}}">预定详情</button>
+                </view>
+            </view>
+            
+        </view>
+    </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="container">
+    <!--地图容器-->
+<map id="myMap" style="width: 100%; height: 700px;" longitude="{{longitude}}" latitude="{{latitude}}"
+scale='16'
+markers='{{makers}}'
+polyline="{{polyline}}"
+>
+</map>
+<!-- <form bindsubmit="formSubmit"> -->
+    <!--输入起点和目的地经纬度坐标，格式为string格式-->
+    <!--起点输入框,同终点，不填默认当前位置-->
+    <!-- <label>起点坐标：<input style="border:1px solid #000;" name="start"></input></label> -->
+    <!--终点输入框,例：39.984060,116.307520-->
+    <!-- <label>终点坐标：<input style="border:1px solid #000;" name="dest" value="{{latAndlong}}"></input></label>  -->
+    <!--提交表单数据-->
+    <!-- <button form-type="submit">路线规划</button>
+</form> -->
+</view>

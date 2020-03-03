@@ -1,0 +1,42 @@
+<view class="comments">
+    <view class="h">
+        <view class="item {{ showType == 0 ? 'active' : ''}}" data-item-type='0' bindtap="switchTab">
+            <view class="txt">全部({{allCount}})</view>
+        </view>
+        <view class="item {{ showType == 1 ? 'active' : ''}}" data-item-type='1' bindtap="switchTab">
+            <view class="txt">有图({{hasPicCount}})</view>
+        </view>
+        <view class="item {{ showType == 2 ? 'active' : ''}}" data-item-type='2' bindtap="switchTab">
+            <view class="txt">好评({{highPraise}})</view>
+        </view>
+        <view class="item {{ showType == 3 ? 'active' : ''}}" data-item-type='3' bindtap="switchTab">
+            <view class="txt">中评({{middlePraise}})</view>
+        </view>
+        <view class="item {{ showType == 4 ? 'active' : ''}}" data-item-type='4' bindtap="switchTab">
+            <view class="txt">差评({{badPraise}})</view>
+        </view>
+    </view>
+  <view class="b">
+    <view class="item" wx:for="{{comments}}" wx:key="{{item.id}}">
+      <view class="info">
+        <view class="user">
+          <image src="{{userServer}}{{item.user.avatar}}"></image>
+          <text>{{item.user.nickname}}</text>
+        </view>
+        <view class="time">{{item.dateStr}}</view>
+      </view>
+      <view class="comment">{{item.content}}</view>
+      <view class="imgs" wx:if="{{item.commentPicture.length > 0}}">
+        <image class="img" wx:for="{{item.commentPicture}}" wx:key="{{pitem.id}}" wx:for-item="pitem" src="{{IPServer}}early{{pitem.picUrl}}"></image>
+      </view>
+      <view class="spec">
+        <!-- <text class="item">白色 2件</text> -->
+      </view>
+      <!-- <view class="customer-service" wx:if="{{item.commentReplyVO}}">
+        <text class="u">小选回复：</text>
+        <text class="c">{{item.commentReplyVO.replyContent}}</text>
+      </view> -->
+    </view>
+
+  </view>
+</view>

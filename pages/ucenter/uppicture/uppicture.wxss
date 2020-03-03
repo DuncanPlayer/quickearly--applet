@@ -1,0 +1,78 @@
+image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 4%;
+}
+
+.add-image, .up-pic image {
+  margin-top: -30px;
+  margin-left: 25%;
+  width: 150rpx;
+  height: 150rpx;
+  color: #ddd;
+  font-size: 144rpx;
+  line-height: 95%;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10rpx;
+}
+
+.picture_list {
+  padding: 20rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.picture_item {
+  margin: 10px;
+  margin-left: 0;
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.picture_item .del {
+  position: absolute;
+  top: -11rpx;
+  right: -11rpx;
+  color: #fff;
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  z-index: 2;
+  line-height: 35rpx;
+  text-align: center;
+  background-color: #f00;
+}
+
+.upload_progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  border-radius: 8rpx;
+  background-color: #000;
+  color: #fff;
+  width: 167rpx;
+  height: 160rpx;
+  text-align: center;
+  line-height: 160rpx;
+  font-size: 12px;
+}
+
+.picture_item image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.yes-upload {
+  color: #fff;
+  background-color: #00a0e9;
+  border-radius: 36rpx;
+}
